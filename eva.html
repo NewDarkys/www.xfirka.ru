@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/backgrounds.css">
+    <link rel="stylesheet" href="css/essentials.css">
+    <script src="js/index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <title>_</title>
+</head>
+<body>
+
+   <script>
+    let cycle = 0;
+    let words = ["Eat", "Trigonometry", "Sleep", "Retry"]
+    setInterval(() => {
+        if (cycle >= words.length) {
+            document.title = `_`
+            cycle=0
+        } else {
+            document.title += `${words[cycle]}`
+            if (cycle < words.length-1) {document.title += ' ->  '};
+            cycle += 1
+        }
+    }, 500);
+    
+   </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+
+
+@media (max-width : 400px) {
+    #video_container {
+        height: 300px !important;
+        margin: -150px 0 0 -150px !important;
+    }
+    #scene_name {
+        font-size: 20px !important;
+    }
+}
+#scene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: black;
+    transition: 3s;
+    z-index: 5;
+}
+
+.display-none {
+    display: none;
+}
+
+#video_container {
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -200px 0 0 -200px;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scene_name {
+    color: #ffffff;
+    font-family: Mukta;
+    font-size: 25px;
+    margin-top: 20px;
+    transition: 1s;
+}
+
+#video {
+    height: 100%;
+}
+
+.hidden {
+    opacity: 0 !important;
+}

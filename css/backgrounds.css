@@ -1,0 +1,10 @@
+.animated-gradient-black-red {
+    animation: animateBg 2s linear infinite;
+    background-image: linear-gradient(90deg,#f8eeea,#d3d4e6,#f8eeea,#d3d4e6);
+    background-size: 300% 100%;
+  }
+  @keyframes animateBg {
+    0% { background-position: 100% 0%; }
+    100% { background-position: 0% 0%; }
+  }
+  

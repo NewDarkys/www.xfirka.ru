@@ -1,0 +1,84 @@
+html, body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+header {
+    padding: 15px;
+    flex: 0 1 auto;
+}
+
+main {
+    color: rgb(0, 0, 0);
+    height: 100%;
+    align-self: stretch;
+    flex: 1 1 auto;
+}
+
+a {
+    color: aquamarine !important;
+}
+
+footer {
+    color: rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    flex: 0 1 auto;
+}
+
+main, header, footer, body {
+    transition: 0.33s;
+}
+
+main, header, footer, #scene {
+    animation: vertical-shaking .1s infinite;
+}
+
+.dark-body {
+    background-color: black !important;
+}
+
+.dark-main {
+    color: aquamarine !important;
+    margin: 25px;
+}
+
+.dark-footer {
+    color: rgb(253, 249, 0) !important;
+    font-family: 'Nunito';
+}
+
+.effect {
+    z-index: 999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    opacity: .25;
+}
+
+.acryl {
+    filter: blur(10px);
+    height: 50px;
+    width: 100%;
+    background-color: rgba(131, 69, 247, 0.158);
+    margin-top: -50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+@keyframes vertical-shaking {
+    50% { transform: translateY(-.5px) }
+    100% { transform: translateY(.5px) }
+}
