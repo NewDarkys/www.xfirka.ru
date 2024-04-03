@@ -45,3 +45,7 @@ let interval = setInterval(() => {
     clearInterval(interval)
   }
 }, 100);
+
+
+
+$('#migration-alert').modal('show');
