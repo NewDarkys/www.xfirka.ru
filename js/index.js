@@ -4,16 +4,12 @@ var scene_name = document.querySelector("#scene_name");
 var scene = document.querySelector("#scene");
 var audio = document.getElementById("audio");
 
-let oldTitle = document.title;
-document.title = "Press any button/mouse button to continue";
-
 let playing = false
 let isVideoReady = false
 
 function launchIntro() {
   if (!playing) {
     playing = true;
-    document.title = oldTitle;
     video.play();
     video_container.classList.remove("hidden");
     video.play();
@@ -45,7 +41,3 @@ let interval = setInterval(() => {
     clearInterval(interval)
   }
 }, 100);
-
-
-
-$('#migration-alert').modal('show');
