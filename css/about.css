@@ -41,11 +41,11 @@ main, header, footer, #scene {
 }
 
 .dark-body {
-    background-color: black !important;
+    background-color: #300937 !important;
 }
 
 .dark-main {
-    color: aquamarine !important;
+    color: #00ffc6 !important;
     margin: 25px;
 }
 
