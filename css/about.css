@@ -20,7 +20,7 @@ main {
 }
 
 a {
-    color: aquamarine !important;
+    color: #00ffc6 !important;
 }
 
 footer {
@@ -50,7 +50,7 @@ main, header, footer, #scene {
 }
 
 .dark-footer {
-    color: rgb(253, 249, 0) !important;
+    color: #00ffc6 !important;
     font-family: 'Nunito';
 }
 
