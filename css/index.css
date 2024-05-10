@@ -19,7 +19,7 @@ html, body {
     top: 0;
     left: 0;
     overflow: auto;
-    background-color: black;
+    background-color: #300937 !important;
     transition: 3s;
     z-index: 5;
 }
